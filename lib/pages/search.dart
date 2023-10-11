@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instahomepage/util/explore_grid.dart';
 
 class UserSearch extends StatelessWidget {
   @override
@@ -11,17 +12,24 @@ class UserSearch extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             child: Container(
               padding: EdgeInsets.all(8),
-              color: Colors.grey[500],
+              color: Colors.grey[200],
               child: Row(
                 children: [
-                  Icon(Icons.search),
+                  Icon(
+                    Icons.search,
+                    color: Colors.grey[400],
+                  ),
                   Container(
-                    child: Text("Search"),
+                    child: Text(
+                      "Search",
+                      style: TextStyle(color: Colors.grey[400]),
+                    ),
                   )
                 ],
               ),
             ),
           )),
+      body: ExploreGrid(),
     );
   }
 }
