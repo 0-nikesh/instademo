@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instahomepage/util/shop_grid.dart';
 
 class UserShop extends StatelessWidget {
   @override
@@ -24,36 +25,37 @@ class UserShop extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(children: [
-        Padding(
-          padding: const EdgeInsets.all(8),
-          //backgroundColor: Colors.transparent,
-          //elevation: 0,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: Container(
-              padding: EdgeInsets.all(8),
-              color: Colors.grey[300],
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.search,
-                    color: Colors.grey[500],
-                  ),
-                  Container(
-                    child: Text(
-                      "Search",
-                      style: TextStyle(color: Colors.grey[500]),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: Container(
+                padding: EdgeInsets.all(8),
+                color: Colors.grey[300],
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.search,
+                      color: Colors.grey[500],
                     ),
-                  )
-                ],
+                    Container(
+                      child: Text(
+                        "Search",
+                        style: TextStyle(color: Colors.grey[500]),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
-        ),
-      ]),
-
-      /// body: ExploreGrid(),
+          Expanded(
+            child: ShopGrid(),
+          ),
+        ],
+      ),
     );
   }
 }
