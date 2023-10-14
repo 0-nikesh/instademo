@@ -34,7 +34,7 @@ class _UserAccountState extends State<UserAccount> {
                         color: Colors.white,
                         child: CircleAvatar(
                             backgroundImage: AssetImage(
-                                "assets/Images/20230909_124939.jpg"))),
+                                "assets/Images/20230714_164100.jpg"))),
                   ),
                   Expanded(
                     flex: 2,
@@ -126,6 +126,7 @@ class _UserAccountState extends State<UserAccount> {
                   Text("Nikesh Bhandari",
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  Icon(Icons.verified),
                   Text("@67,510,653"),
                   Text("It is what It is😁"),
                   Text("#extensions and plugins"),
