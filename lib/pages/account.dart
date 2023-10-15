@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instahomepage/util/bubble_stories.dart';
 
 class UserAccount extends StatefulWidget {
   const UserAccount({super.key});
@@ -133,6 +134,17 @@ class _UserAccountState extends State<UserAccount> {
                 ],
               ),
             ),
+            Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                child: Row(
+                  children: [
+                    BubbleStories(text: "Otaku"),
+                    BubbleStories(text: "Kanyam"),
+                    BubbleStories(text: "Rasuwa"),
+                    BubbleStories(text: "New"),
+                  ],
+                )),
           ],
         ));
   }
